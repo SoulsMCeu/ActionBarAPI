@@ -1,8 +1,6 @@
 package de.soulsmc.actionbarapi;
 
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
-import org.bukkit.Server;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
@@ -25,12 +23,11 @@ public class ActionBarAPI extends JavaPlugin implements Listener {
     private static Plugin plugin;
     private static String nmsver;
     private static boolean useOldMethods = false;
+    public static String prefix = "§8» §9SoulsMC§8.§9de §8┃ §7";
+    private static ConsoleCommandSender console = Bukkit.getConsoleSender();
 
     public void onEnable() {
         plugin = this;
-
-        Server server = getServer();
-        ConsoleCommandSender console = server.getConsoleSender();
 
         nmsver = Bukkit.getServer().getClass().getPackage().getName();
         nmsver = nmsver.substring(nmsver.lastIndexOf(".") + 1);
@@ -39,8 +36,8 @@ public class ActionBarAPI extends JavaPlugin implements Listener {
             useOldMethods = true;
         }
 
-        console.sendMessage(ChatColor.AQUA + getDescription().getName() + " V" + getDescription().getVersion() + " has been enabled!");
-    }
+        console.sendMessage(prefix + "Das Plugin §6" + getDescription().getName() +
+                " §7Version §a" + getDescription().getVersion() + " §7erfolgreich §a§naktiviert§7!");    }
 
     public static void sendActionBar(Player player, String message) {
         if (!player.isOnline()) {
@@ -124,5 +121,11 @@ public class ActionBarAPI extends JavaPlugin implements Listener {
         for (Player p : Bukkit.getOnlinePlayers()) {
             sendActionBar(p, message, duration);
         }
+    }
+
+    @Override
+    public void onDisable() {
+        console.sendMessage(prefix + "Das Plugin §6" + getDescription().getName() +
+                " §7Version §a" + getDescription().getVersion() + " §7erfolgreich §c§ndeaktiviert§7!");
     }
 }

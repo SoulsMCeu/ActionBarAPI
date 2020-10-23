@@ -3,7 +3,7 @@ ActionBarAPI Plugin for SoulsMC.de
 
 How To (Server Admins)
 ------
-CloudSpigot is a jar file that you can download and run just like a normal jar file.
+ActionBarAPI is a jar file that you can download and run just like a normal jar file.
 
 Download a copy of ActionBarAPI-1.0.0-SNAPSHOT.jar from [releases](https://github.com/SoulsMCde/ActionBarAPI/releases/download/v1.0.0/ActionBarAPI-1.0.0-SNAPSHOT.jar).
 

@@ -7,7 +7,7 @@ ActionBarAPI is a jar file that you can download and run just like a normal jar 
 
 Download a copy of ActionBarAPI-1.0.1-SNAPSHOT.jar from [releases](https://github.com/SoulsMCde/ActionBarAPI/releases/download/v1.0.1/ActionBarAPI-1.0.1-SNAPSHOT.jar).
 
-Paste the jar directly from your server. Just like old times
+Paste the jar directly to your plugins folder. Just like old times
 
 ## How To (Plugin Developers)
 ------

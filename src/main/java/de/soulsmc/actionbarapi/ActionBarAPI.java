@@ -24,7 +24,7 @@ public class ActionBarAPI extends JavaPlugin implements Listener {
     private static String nmsver;
     private static boolean useOldMethods = false;
     public static String prefix = "§8» §9SoulsMC§8.§9de §8┃ §7";
-    private static ConsoleCommandSender console = Bukkit.getConsoleSender();
+    private static final ConsoleCommandSender console = Bukkit.getConsoleSender();
 
     public void onEnable() {
         plugin = this;
@@ -109,7 +109,7 @@ public class ActionBarAPI extends JavaPlugin implements Listener {
                 public void run() {
                     sendActionBar(player, message);
                 }
-            }.runTaskLater(plugin, (long) duration);
+            }.runTaskLater(plugin, duration);
         }
     }
 

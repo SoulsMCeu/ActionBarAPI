@@ -5,7 +5,7 @@ How To (Server Admins)
 ------
 ActionBarAPI is a jar file that you can download and run just like a normal jar file.
 
-Download a copy of ActionBarAPI-1.0.1-SNAPSHOT.jar from [releases](https://github.com/SoulsMCde/ActionBarAPI/releases/download/v1.0.1/ActionBarAPI-1.0.1-SNAPSHOT.jar).
+Download a copy of ActionBarAPI-1.0.2-SNAPSHOT.jar from [releases](https://github.com/SoulsMCde/ActionBarAPI/releases/download/v1.0.2/ActionBarAPI-1.0.2-SNAPSHOT.jar).
 
 Paste the jar directly to your plugins folder. Just like old times
 
@@ -23,7 +23,7 @@ Paste the jar directly to your plugins folder. Just like old times
 <dependency>
     <groupId>de.soulsmc</groupId>
     <artifactId>actionbarapi</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.2-SNAPSHOT</version>
     <type>jar</type>
     <scope>provided</scope>
 </dependency>

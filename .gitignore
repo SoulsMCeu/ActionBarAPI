@@ -1,9 +1,6 @@
 # IntelliJ
-
 /out/
 /.idea/
-ActionBarAPI.iml
-actionbarapi.iml
 
 # Maven
 /target

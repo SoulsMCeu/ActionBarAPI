@@ -1,4 +1,4 @@
-package de.soulsmc.actionbarapi;
+package eu.soulsmc.actionbarapi;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event;

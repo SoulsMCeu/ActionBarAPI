@@ -1,4 +1,4 @@
-package de.soulsmc.actionbarapi;
+package eu.soulsmc.actionbarapi;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.ConsoleCommandSender;
@@ -23,7 +23,7 @@ public class ActionBarAPI extends JavaPlugin implements Listener {
     private static Plugin plugin;
     private static String nmsver;
     private static boolean useOldMethods = false;
-    public static String prefix = "§8» §9SoulsMC§8.§9de §8┃ §7";
+    public static String prefix = "§8» §9SoulsMC§8.§9eu §8┃ §7";
     private static final ConsoleCommandSender console = Bukkit.getConsoleSender();
 
     public void onEnable() {
@@ -37,7 +37,8 @@ public class ActionBarAPI extends JavaPlugin implements Listener {
         }
 
         console.sendMessage(prefix + "Das Plugin §6" + getDescription().getName() +
-                " §7Version §a" + getDescription().getVersion() + " §7erfolgreich §a§naktiviert§7!");    }
+                " §7Version §a" + getDescription().getVersion() + " §7erfolgreich §a§naktiviert§7!");
+    }
 
     public static void sendActionBar(Player player, String message) {
         if (!player.isOnline()) {

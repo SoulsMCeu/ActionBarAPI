@@ -1,6 +1,7 @@
 name: ActionBarAPI
-author: G8I
+author: Razuuu
 main: eu.soulsmc.actionbarapi.ActionBarAPI
 version: ${project.version}
-description: Plugin für SoulsMC.eu
+api-version: 1.20
+description: Plugin for SoulsMC
 website: https://www.soulsmc.eu
